@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="blackjackTable.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav id="navbarID" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="#"><img class="blackjackLogo" src="Assets/fourSuitsLogo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1">
+                <div id="navContent">
+                    <span><a href="http://3.14.148.190:8080" class="navbarLinks" id="temp"><img id="cardsIcon" src="Assets/cardsIcon@2x.png" alt=""> PLAY</a></span>
+                    <span><a href="" class="navbarLinks"><img id="profileIcon" src="Assets/profileIcon@2x.png" alt=""> PROFILE</a></span>
+                    <span><a href="http://3.14.148.190:8080/login.html" onclick="deleteAllCookies()" class="navbarLinks">LOGOUT</a></span>
+                    <!-- <span><a href="http://localhost:8080" class="navbarLinks" id="temp"><img id="cardsIcon" src="Assets/cardsIcon@2x.png" alt=""> PLAY</a></span> -->
+                    <!-- <span><a href="http://localhost:8080/login.html" onclick="deleteAllCookies()" class="navbarLinks">LOGOUT</a></span> -->
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="profileDiv">
+        <!-- <span style="width: 29%"> -->
+        <span id="profileImage"></span>
+        <span class="statsDiv">
+            <div class="stats">Wins: <span id="wins"></span></div>
+            <div class="stats">Losses: <span id="losses"></span></div>
+            <div class="stats">Win Rate: <span id="winRate"></span></div>
+        </span>
+        <div id="username"></div>
+        <div id="balance">BALANCE</div>
+        <div class="balanceRectangle"><span id="balanceValue"></span></div>
+        <!-- </span> -->
+        <button id="bonusButton">DAILY BONUS</button>
+        <p id="bonusTimer"></p>
+    </div>
+    
+    <script type="text/javascript" src="blackjackTable.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+    <script type="text/javascript" src="profile.js"></script>
+</body>
+
+</html>

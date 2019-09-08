@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="blackjackTable.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+
+    <title>Blackjack Signup</title>
+</head>
+
+<body>
+    <div id="loginHeaderDiv">
+        <h1 class="loginHeader">WELCOME TO <span>BLACKJACK</span></h1>
+        <h2 class="loginHeader">SIGNUP</h2>
+    </div> <!-- <form id="loginForm"> -->
+    <div id="loginForm">
+
+        <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Username</label> -->
+            <input type="name" required class="loginInputs" id="usernameSignup" placeholder="Username">
+            <hr class="inputLines">
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleInputPassword1">Password</label> -->
+            <input type="password" required class="loginInputs" id="passwordSignup" placeholder="Password">
+            <hr class="inputLines">
+        </div>
+        <!-- <button type="submit" class="btn btn-default" onclick="register()">Signup</button> -->
+        <!-- </form> -->
+        <div class="formButtonsDiv">
+            <button type="submit" class="formButtons" onclick="register()">Signup</button>
+            <a href="http://localhost:8080/login.html" class="formButtons">Login</a>
+            <!-- <a href="http://3.14.148.190:8080/login.html" class="formButtons">Login</a> -->
+        </div>
+    </div>
+
+    <!-- <button class="btn btn-default" style="margin-left: 35%">Back to Login</button> -->
+    <script type="text/javascript" src="register.js"></script>
+    <script type="text/javascript" src="blackjackTable.js"></script>
+
+</body>
+
+</html>
